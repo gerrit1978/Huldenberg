@@ -1,0 +1,32 @@
+/* Desktop and tablet */
+@media all and (min-width: 768px) {
+
+  header {
+    position: relative;
+    z-index: 1000;
+    height: 190px;
+    .logo {
+      padding-left: 0;
+      padding-right: 0;
+      img {
+        width: 100%;
+        height: 190px;
+      }
+    }
+    .visual {
+      position: absolute;
+      z-index: 0;
+      top: 0;
+      left: 0;
+    }
+  }
+  
+  nav {
+    height: 50px;
+    line-height: 50px;
+    font-family: "Oswald";
+    font-size: 1.23em;
+    text-transform: uppercase;
+  }
+
+}

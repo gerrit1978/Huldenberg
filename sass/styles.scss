@@ -7,6 +7,37 @@
 // Import Bootstrap for Sass
 @import "bootstrap";
 
+// Layouts
+@import "layouts/desktop.scss";
+@import "layouts/tablet.scss";
+@import "layouts/smartphone.scss";
+
+
 body {
-  font-family: "Quattrocento";
+  font-family: "Oswald";
+  background: $grey-bg;
+  color: $grid-columns;
+}
+
+.container {
+  background: white;
+}
+
+header {
+  &.container {
+    padding: 0;
+  }
+}
+
+footer {
+  &.container {
+    background: $green-dark;  
+  }
+}
+
+nav {
+  &.container {
+    background: $green-light;
+    color: white;
+  }
 }
