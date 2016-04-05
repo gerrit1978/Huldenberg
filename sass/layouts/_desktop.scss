@@ -1,6 +1,13 @@
 /* Desktop and tablet */
 @media all and (min-width: 768px) {
 
+  .container {
+    .inner {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
+
   header {
     position: relative;
     z-index: 1000;
@@ -27,6 +34,17 @@
     font-family: "Oswald";
     font-size: 1.23em;
     text-transform: uppercase;
+    ul {
+      margin: 0;
+      padding: 0;
+      li {
+        margin: 0;
+        margin-right: 6em;
+        padding: 0;
+        display: inline-block;
+        list-style: none;
+      }
+    }
   }
 
 }

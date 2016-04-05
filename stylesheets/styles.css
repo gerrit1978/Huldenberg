@@ -8793,23 +8793,29 @@ button.close {
 }
 /* Desktop and tablet */
 @media all and (min-width: 768px) {
-  /* line 4, ../sass/layouts/_desktop.scss */
+  /* line 5, ../sass/layouts/_desktop.scss */
+  .container .inner {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  /* line 11, ../sass/layouts/_desktop.scss */
   header {
     position: relative;
     z-index: 1000;
     height: 190px;
   }
-  /* line 8, ../sass/layouts/_desktop.scss */
+  /* line 15, ../sass/layouts/_desktop.scss */
   header .logo {
     padding-left: 0;
     padding-right: 0;
   }
-  /* line 11, ../sass/layouts/_desktop.scss */
+  /* line 18, ../sass/layouts/_desktop.scss */
   header .logo img {
     width: 100%;
     height: 190px;
   }
-  /* line 16, ../sass/layouts/_desktop.scss */
+  /* line 23, ../sass/layouts/_desktop.scss */
   header .visual {
     position: absolute;
     z-index: 0;
@@ -8817,7 +8823,7 @@ button.close {
     left: 0;
   }
 
-  /* line 24, ../sass/layouts/_desktop.scss */
+  /* line 31, ../sass/layouts/_desktop.scss */
   nav {
     height: 50px;
     line-height: 50px;
@@ -8825,31 +8831,97 @@ button.close {
     font-size: 1.23em;
     text-transform: uppercase;
   }
+  /* line 37, ../sass/layouts/_desktop.scss */
+  nav ul {
+    margin: 0;
+    padding: 0;
+  }
+  /* line 40, ../sass/layouts/_desktop.scss */
+  nav ul li {
+    margin: 0;
+    margin-right: 6em;
+    padding: 0;
+    display: inline-block;
+    list-style: none;
+  }
 }
-/* line 16, ../sass/styles.scss */
-body {
+/* line 15, ../sass/styles.scss */
+h1, h2, h3 {
   font-family: "Oswald";
+}
+
+/* line 20, ../sass/styles.scss */
+body {
+  font-family: "Quattrocento";
   background: #fafafa;
   color: 12;
 }
 
-/* line 22, ../sass/styles.scss */
+/* line 26, ../sass/styles.scss */
 .container {
   background: white;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
-/* line 27, ../sass/styles.scss */
-header.container {
-  padding: 0;
+/* line 32, ../sass/styles.scss */
+nav {
+  background: #8cc63f;
+  color: white;
 }
-
-/* line 33, ../sass/styles.scss */
-footer.container {
+/* line 35, ../sass/styles.scss */
+nav a {
+  color: white;
+  display: block;
+  padding: 0 10px;
+}
+/* line 39, ../sass/styles.scss */
+nav a:hover {
+  text-decoration: none;
+  color: white;
   background: #476b18;
 }
 
-/* line 39, ../sass/styles.scss */
-nav.container {
-  background: #8cc63f;
+/* line 48, ../sass/styles.scss */
+aside.productcatalog {
+  background: #476b18;
+  padding-left: 0;
+  padding-right: 0;
+}
+/* line 52, ../sass/styles.scss */
+aside.productcatalog ul {
+  margin: 0;
+  padding: 0;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+/* line 57, ../sass/styles.scss */
+aside.productcatalog ul li {
+  margin: 0;
+  list-style: none;
+  font-size: 1.23em;
+  padding: 1em 20px;
+}
+/* line 62, ../sass/styles.scss */
+aside.productcatalog ul li a {
   color: white;
+  font-family: "Oswald";
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+}
+/* line 68, ../sass/styles.scss */
+aside.productcatalog ul li a:hover {
+  text-decoration: none;
+}
+/* line 72, ../sass/styles.scss */
+aside.productcatalog ul li:hover {
+  background: #8cc63f;
+}
+
+/* line 80, ../sass/styles.scss */
+footer {
+  background: #8cc63f !important;
+  color: white;
+  padding: 3em 0;
 }

@@ -12,32 +12,73 @@
 @import "layouts/tablet.scss";
 @import "layouts/smartphone.scss";
 
+h1,h2,h3 {
+  font-family: "Oswald";
+}
+
 
 body {
-  font-family: "Oswald";
+  font-family: "Quattrocento";
   background: $grey-bg;
   color: $grid-columns;
 }
 
 .container {
   background: white;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
-header {
-  &.container {
-    padding: 0;
+nav {
+  background: $green-light;
+  color: white;
+  a {
+    color: white;
+    display: block;
+    padding: 0 10px;
+    &:hover {
+      text-decoration: none;
+      color: white;
+      background: $green-dark;
+    }
+  }
+}
+
+aside {
+  &.productcatalog {
+    background: $green-dark;
+    padding-left: 0;
+    padding-right: 0;
+    ul {
+      margin: 0;
+      padding: 0;
+      margin-top: 1em;
+      margin-bottom: 1em;
+      li {
+        margin: 0;
+        list-style: none;
+        font-size: 1.23em;
+        padding: 1em 20px;
+        a {
+          color: white;
+          font-family: "Oswald";
+          text-transform: uppercase;
+          text-decoration: none;
+          display: block;
+          &:hover {
+            text-decoration: none;
+          }
+        }
+        &:hover {
+          background: $green-light;
+        }
+      }
+    }
   }
 }
 
 footer {
-  &.container {
-    background: $green-dark;  
-  }
-}
-
-nav {
-  &.container {
-    background: $green-light;
-    color: white;
-  }
+  background: $green-light !important;  
+  color: white;
+  padding: 3em 0;
 }
