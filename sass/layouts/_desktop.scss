@@ -26,6 +26,33 @@
       top: 0;
       left: 0;
     }
+    .search {
+    	padding-top: 50px;
+    	text-align: center;
+    	h2 {
+    		font-family: "Quattrocento";
+    		color: white;
+    		text-shadow: 2px 2px black;
+    	}
+    	.form-search {
+    		border: 1px solid $grey-bg;
+    		border-radius: 5px;
+    		width: 40%;
+    		padding: 5px 10px;
+    	}
+    	.form-submit {
+    		position: relative;
+    		top: 2px;
+    		margin-left: 20px;
+    		border: 1px solid $green-light;
+    		padding: 5px 30px;
+    		background: $green-light;
+    		color: white;
+    		text-transform: uppercase;
+    		font-family: Oswald;
+    		border-radius: 5px;
+    	}
+    }
   }
   
   nav {
@@ -46,5 +73,21 @@
       }
     }
   }
+
+
+	aside {
+	  &.uit {
+	    .push-event {
+		    .push-event-image {
+			  float: left;
+		      margin-right: 20px;
+		    }
+		    .push-event-calendarsummary, .push-event-location {
+		      margin-left: 120px;
+		    }
+	    }
+	  }
+	}
+
 
 }

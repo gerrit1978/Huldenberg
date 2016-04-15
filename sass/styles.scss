@@ -16,7 +16,6 @@ h1,h2,h3 {
   font-family: "Oswald";
 }
 
-
 body {
   font-family: "Quattrocento";
   background: $grey-bg;
@@ -44,41 +43,146 @@ nav {
   }
 }
 
-aside {
-  &.productcatalog {
-    background: $green-dark;
-    padding-left: 0;
-    padding-right: 0;
-    ul {
-      margin: 0;
-      padding: 0;
-      margin-top: 1em;
-      margin-bottom: 1em;
-      li {
-        margin: 0;
-        list-style: none;
-        font-size: 1.23em;
-        padding: 1em 20px;
-        a {
-          color: white;
-          font-family: "Oswald";
-          text-transform: uppercase;
-          text-decoration: none;
-          display: block;
-          &:hover {
-            text-decoration: none;
-          }
-        }
-        &:hover {
-          background: $green-light;
-        }
-      }
-    }
-  }
+.main {
+	a {
+	  color: $green-dark;
+	  text-decoration: none;
+	  &:hover {
+	    color: $green-light;
+	    text-decoration: none;
+	  }
+	}
+	.main-content {
+		a {
+			border-bottom: 1px solid $green-dark;
+			&:hover {
+				color: $green-dark;
+				border-bottom: none;
+			}
+		}
+		padding: 30px 0;
+		.main-content-row {
+			margin-bottom: 20px;
+			.item {
+				h2 {
+					font-size: 1.4em;
+				}
+				.image {
+					float: left;
+					margin-right: 20px;
+				}
+		  	}
+		}
+	}
+	aside {
+	  &.productcatalog {
+	    background: $green-dark;
+	    padding-left: 0;
+	    padding-right: 0;
+	    ul {
+	      margin: 0;
+	      padding: 0;
+	      margin-top: 1em;
+	      margin-bottom: 1em;
+	      li {
+	        margin: 0;
+	        list-style: none;
+	        font-size: 1.23em;
+	        padding: 1em 20px;
+	        a {
+	          color: white;
+	          font-family: "Oswald";
+	          text-transform: uppercase;
+	          text-decoration: none;
+	          display: block;
+	          &:hover {
+	            text-decoration: none;
+	          }
+	        }
+	        &:hover {
+	          background: $green-light;
+	        }
+	      }
+	    }
+	  }
+	  &.uit {
+	    background-color: $green-lighter;
+	    h3 {
+	      text-align: center;
+	      color: $green-dark;
+	      &.cn-offscreen {
+	        text-align: left;
+	      }
+	    }
+	    .push-event {
+		    h2 {
+		      a {
+		        color: $green-light;
+		        font-size: 0.8em;
+		        line-height: 1.3;
+		        &:hover {
+				  color: $green-dark;
+		          text-decoration: none;
+		        }
+		      }
+		    }
+		    .cn-event-label {
+		      font-weight: bold;
+		      display: block;
+		    }
+	    }
+	    .cultuurnet-control-footer {
+	      clear: both;
+	      padding-top: 30px;
+	      padding-bottom: 30px;
+	      font-family: Oswald;
+	      a {
+	        color: $green-light;      
+	        font-size: 1.2em;
+	        &:hover {
+	          color: $green-dark;
+	          text-decoration: none;
+	        }
+	      }
+	    }
+	  }
+	}
 }
+
 
 footer {
   background: $green-light !important;  
   color: white;
   padding: 3em 0;
+  ul.links {
+    margin: 0;
+    padding: 0;
+    li {
+      background: url(../images/sprite.png) no-repeat;
+      list-style: none;
+      height: 25px;
+      line-height: 25px;
+      margin-bottom: 10px;
+      &.pol {
+        background-position: 0 0;
+      }
+      &.bib {
+        background-position: 0 -25px;
+      }
+      &.fb {
+        background-position: 0 -50px;
+      }
+      &.tw {
+        background-position: 0 -75px;
+      }
+      a {
+        margin-left: 30px;
+        color: white;
+		&:hover {
+		  color: $green-dark;
+		  text-decoration: none;
+		}
+      }
+    }
+  }
 }
