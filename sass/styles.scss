@@ -43,6 +43,27 @@ nav {
   }
 }
 
+header {
+	.search {
+		.form-search {
+			border: 1px solid $grey-bg;
+			border-radius: 5px;
+			padding: 5px 10px;
+		}
+		.form-submit {
+			position: relative;
+			top: 2px;
+			border: 1px solid $green-light;
+			padding: 5px 30px;
+			background: $green-light;
+			color: white;
+			text-transform: uppercase;
+			font-family: Oswald;
+			border-radius: 5px;
+		}
+	}
+}
+
 .main {
 	a {
 	  color: $green-dark;
@@ -66,10 +87,6 @@ nav {
 			.item {
 				h2 {
 					font-size: 1.4em;
-				}
-				.image {
-					float: left;
-					margin-right: 20px;
 				}
 		  	}
 		}
@@ -153,7 +170,7 @@ nav {
 footer {
   background: $green-light !important;  
   color: white;
-  padding: 3em 0;
+  padding: 2em 0;
   ul.links {
     margin: 0;
     padding: 0;

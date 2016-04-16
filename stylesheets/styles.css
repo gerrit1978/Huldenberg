@@ -8793,68 +8793,61 @@ button.close {
 }
 /* Desktop and tablet */
 @media all and (min-width: 768px) {
-  /* line 5, ../sass/layouts/_desktop.scss */
+  /* line 4, ../sass/layouts/_desktop.scss */
+  .resp-true {
+    display: none;
+  }
+
+  /* line 9, ../sass/layouts/_desktop.scss */
   .container .inner {
     margin-left: 20px;
     margin-right: 20px;
   }
 
-  /* line 11, ../sass/layouts/_desktop.scss */
+  /* line 15, ../sass/layouts/_desktop.scss */
   header {
     position: relative;
     z-index: 1000;
     height: 190px;
   }
-  /* line 15, ../sass/layouts/_desktop.scss */
+  /* line 19, ../sass/layouts/_desktop.scss */
   header .logo {
     padding-left: 0;
     padding-right: 0;
   }
-  /* line 18, ../sass/layouts/_desktop.scss */
+  /* line 22, ../sass/layouts/_desktop.scss */
   header .logo img {
     width: 100%;
     height: 190px;
   }
-  /* line 23, ../sass/layouts/_desktop.scss */
+  /* line 27, ../sass/layouts/_desktop.scss */
   header .visual {
     position: absolute;
     z-index: 0;
     top: 0;
     left: 0;
   }
-  /* line 29, ../sass/layouts/_desktop.scss */
+  /* line 33, ../sass/layouts/_desktop.scss */
   header .search {
     padding-top: 50px;
     text-align: center;
   }
-  /* line 32, ../sass/layouts/_desktop.scss */
+  /* line 36, ../sass/layouts/_desktop.scss */
   header .search h2 {
     font-family: "Quattrocento";
     color: white;
     text-shadow: 2px 2px black;
   }
-  /* line 37, ../sass/layouts/_desktop.scss */
+  /* line 41, ../sass/layouts/_desktop.scss */
   header .search .form-search {
-    border: 1px solid #fafafa;
-    border-radius: 5px;
     width: 40%;
-    padding: 5px 10px;
   }
-  /* line 43, ../sass/layouts/_desktop.scss */
+  /* line 44, ../sass/layouts/_desktop.scss */
   header .search .form-submit {
-    position: relative;
-    top: 2px;
     margin-left: 20px;
-    border: 1px solid #8cc63f;
-    padding: 5px 30px;
-    background: #8cc63f;
-    color: white;
-    text-transform: uppercase;
-    font-family: Oswald;
-    border-radius: 5px;
   }
 
-  /* line 58, ../sass/layouts/_desktop.scss */
+  /* line 50, ../sass/layouts/_desktop.scss */
   nav {
     height: 50px;
     line-height: 50px;
@@ -8862,12 +8855,12 @@ button.close {
     font-size: 1.23em;
     text-transform: uppercase;
   }
-  /* line 64, ../sass/layouts/_desktop.scss */
+  /* line 56, ../sass/layouts/_desktop.scss */
   nav ul {
     margin: 0;
     padding: 0;
   }
-  /* line 67, ../sass/layouts/_desktop.scss */
+  /* line 59, ../sass/layouts/_desktop.scss */
   nav ul li {
     margin: 0;
     margin-right: 6em;
@@ -8876,14 +8869,133 @@ button.close {
     list-style: none;
   }
 
-  /* line 81, ../sass/layouts/_desktop.scss */
+  /* line 73, ../sass/layouts/_desktop.scss */
+  .main .main-content .main-content-row .item .image {
+    float: left;
+    margin-right: 20px;
+  }
+
+  /* line 87, ../sass/layouts/_desktop.scss */
   aside.uit .push-event .push-event-image {
     float: left;
     margin-right: 20px;
   }
-  /* line 85, ../sass/layouts/_desktop.scss */
+  /* line 91, ../sass/layouts/_desktop.scss */
   aside.uit .push-event .push-event-calendarsummary, aside.uit .push-event .push-event-location {
     margin-left: 120px;
+  }
+}
+/* Smartphone */
+@media all and (min-width: 320px) and (max-width: 767px) {
+  /* line 4, ../sass/layouts/_smartphone.scss */
+  .resp-false {
+    display: none;
+  }
+
+  /* line 9, ../sass/layouts/_smartphone.scss */
+  header .col-md-2, header .col-md-10 {
+    margin: 0;
+    padding: 0;
+  }
+  /* line 13, ../sass/layouts/_smartphone.scss */
+  header .visual {
+    display: none;
+  }
+  /* line 17, ../sass/layouts/_smartphone.scss */
+  header .logo img {
+    height: 55px;
+    max-width: 100%;
+    position: relative;
+    z-index: 10000;
+  }
+  /* line 24, ../sass/layouts/_smartphone.scss */
+  header .search {
+    background: #476b18;
+    color: #8cc63f;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    text-align: center;
+  }
+  /* line 30, ../sass/layouts/_smartphone.scss */
+  header .search h2 {
+    margin: 0;
+    margin-bottom: 1em;
+    font-family: "Quattrocento";
+    font-size: 1.4em;
+  }
+  /* line 36, ../sass/layouts/_smartphone.scss */
+  header .search .form-search {
+    width: 50%;
+  }
+  /* line 39, ../sass/layouts/_smartphone.scss */
+  header .search .form-submit {
+    margin-left: 10px;
+  }
+
+  /* line 45, ../sass/layouts/_smartphone.scss */
+  nav.container {
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+    background: #8cc63f;
+    width: 100%;
+    height: 55px;
+    overflow: hidden;
+  }
+  /* line 53, ../sass/layouts/_smartphone.scss */
+  nav.container .col-md-1 {
+    height: 0;
+  }
+  /* line 56, ../sass/layouts/_smartphone.scss */
+  nav.container .col-md-11 {
+    margin: 0;
+    padding: 0;
+  }
+  /* line 60, ../sass/layouts/_smartphone.scss */
+  nav.container ul.menu {
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+  }
+  /* line 64, ../sass/layouts/_smartphone.scss */
+  nav.container ul.menu li {
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #f8feef;
+    list-style: none;
+    font-family: Oswald;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    height: 35px;
+    line-height: 35px;
+  }
+  /* line 74, ../sass/layouts/_smartphone.scss */
+  nav.container ul.menu li.title, nav.container ul.menu li.close-btn {
+    height: 55px;
+    line-height: 55px;
+    text-align: right;
+    padding-right: 50px;
+    background: url(../images/sprite.png) no-repeat right -126px;
+  }
+  /* line 81, ../sass/layouts/_smartphone.scss */
+  nav.container ul.menu li.close-btn {
+    display: none;
+    background-position: right -186px;
+    position: relative;
+    top: -55px;
+    border: none;
+    text-indent: -1999em;
+    overflow: hidden;
+  }
+  /* line 90, ../sass/layouts/_smartphone.scss */
+  nav.container ul.menu li.separator {
+    height: 1px;
+  }
+
+  /* line 101, ../sass/layouts/_smartphone.scss */
+  .main .main-content .main-content-row .item .image {
+    text-align: center;
+    margin-bottom: 20px;
   }
 }
 /* line 15, ../sass/styles.scss */
@@ -8923,63 +9035,77 @@ nav a:hover {
   background: #476b18;
 }
 
-/* line 47, ../sass/styles.scss */
+/* line 48, ../sass/styles.scss */
+header .search .form-search {
+  border: 1px solid #fafafa;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+/* line 53, ../sass/styles.scss */
+header .search .form-submit {
+  position: relative;
+  top: 2px;
+  border: 1px solid #8cc63f;
+  padding: 5px 30px;
+  background: #8cc63f;
+  color: white;
+  text-transform: uppercase;
+  font-family: Oswald;
+  border-radius: 5px;
+}
+
+/* line 68, ../sass/styles.scss */
 .main a {
   color: #476b18;
   text-decoration: none;
 }
-/* line 50, ../sass/styles.scss */
+/* line 71, ../sass/styles.scss */
 .main a:hover {
   color: #8cc63f;
   text-decoration: none;
 }
-/* line 55, ../sass/styles.scss */
+/* line 76, ../sass/styles.scss */
 .main .main-content {
   padding: 30px 0;
 }
-/* line 56, ../sass/styles.scss */
+/* line 77, ../sass/styles.scss */
 .main .main-content a {
   border-bottom: 1px solid #476b18;
 }
-/* line 58, ../sass/styles.scss */
+/* line 79, ../sass/styles.scss */
 .main .main-content a:hover {
   color: #476b18;
   border-bottom: none;
 }
-/* line 64, ../sass/styles.scss */
+/* line 85, ../sass/styles.scss */
 .main .main-content .main-content-row {
   margin-bottom: 20px;
 }
-/* line 67, ../sass/styles.scss */
+/* line 88, ../sass/styles.scss */
 .main .main-content .main-content-row .item h2 {
   font-size: 1.4em;
 }
-/* line 70, ../sass/styles.scss */
-.main .main-content .main-content-row .item .image {
-  float: left;
-  margin-right: 20px;
-}
-/* line 78, ../sass/styles.scss */
+/* line 95, ../sass/styles.scss */
 .main aside.productcatalog {
   background: #476b18;
   padding-left: 0;
   padding-right: 0;
 }
-/* line 82, ../sass/styles.scss */
+/* line 99, ../sass/styles.scss */
 .main aside.productcatalog ul {
   margin: 0;
   padding: 0;
   margin-top: 1em;
   margin-bottom: 1em;
 }
-/* line 87, ../sass/styles.scss */
+/* line 104, ../sass/styles.scss */
 .main aside.productcatalog ul li {
   margin: 0;
   list-style: none;
   font-size: 1.23em;
   padding: 1em 20px;
 }
-/* line 92, ../sass/styles.scss */
+/* line 109, ../sass/styles.scss */
 .main aside.productcatalog ul li a {
   color: white;
   font-family: "Oswald";
@@ -8987,73 +9113,73 @@ nav a:hover {
   text-decoration: none;
   display: block;
 }
-/* line 98, ../sass/styles.scss */
+/* line 115, ../sass/styles.scss */
 .main aside.productcatalog ul li a:hover {
   text-decoration: none;
 }
-/* line 102, ../sass/styles.scss */
+/* line 119, ../sass/styles.scss */
 .main aside.productcatalog ul li:hover {
   background: #8cc63f;
 }
-/* line 108, ../sass/styles.scss */
+/* line 125, ../sass/styles.scss */
 .main aside.uit {
   background-color: #f8feef;
 }
-/* line 110, ../sass/styles.scss */
+/* line 127, ../sass/styles.scss */
 .main aside.uit h3 {
   text-align: center;
   color: #476b18;
 }
-/* line 113, ../sass/styles.scss */
+/* line 130, ../sass/styles.scss */
 .main aside.uit h3.cn-offscreen {
   text-align: left;
 }
-/* line 119, ../sass/styles.scss */
+/* line 136, ../sass/styles.scss */
 .main aside.uit .push-event h2 a {
   color: #8cc63f;
   font-size: 0.8em;
   line-height: 1.3;
 }
-/* line 123, ../sass/styles.scss */
+/* line 140, ../sass/styles.scss */
 .main aside.uit .push-event h2 a:hover {
   color: #476b18;
   text-decoration: none;
 }
-/* line 129, ../sass/styles.scss */
+/* line 146, ../sass/styles.scss */
 .main aside.uit .push-event .cn-event-label {
   font-weight: bold;
   display: block;
 }
-/* line 134, ../sass/styles.scss */
+/* line 151, ../sass/styles.scss */
 .main aside.uit .cultuurnet-control-footer {
   clear: both;
   padding-top: 30px;
   padding-bottom: 30px;
   font-family: Oswald;
 }
-/* line 139, ../sass/styles.scss */
+/* line 156, ../sass/styles.scss */
 .main aside.uit .cultuurnet-control-footer a {
   color: #8cc63f;
   font-size: 1.2em;
 }
-/* line 142, ../sass/styles.scss */
+/* line 159, ../sass/styles.scss */
 .main aside.uit .cultuurnet-control-footer a:hover {
   color: #476b18;
   text-decoration: none;
 }
 
-/* line 153, ../sass/styles.scss */
+/* line 170, ../sass/styles.scss */
 footer {
   background: #8cc63f !important;
   color: white;
-  padding: 3em 0;
+  padding: 2em 0;
 }
-/* line 157, ../sass/styles.scss */
+/* line 174, ../sass/styles.scss */
 footer ul.links {
   margin: 0;
   padding: 0;
 }
-/* line 160, ../sass/styles.scss */
+/* line 177, ../sass/styles.scss */
 footer ul.links li {
   background: url(../images/sprite.png) no-repeat;
   list-style: none;
@@ -9061,28 +9187,28 @@ footer ul.links li {
   line-height: 25px;
   margin-bottom: 10px;
 }
-/* line 166, ../sass/styles.scss */
+/* line 183, ../sass/styles.scss */
 footer ul.links li.pol {
   background-position: 0 0;
 }
-/* line 169, ../sass/styles.scss */
+/* line 186, ../sass/styles.scss */
 footer ul.links li.bib {
   background-position: 0 -25px;
 }
-/* line 172, ../sass/styles.scss */
+/* line 189, ../sass/styles.scss */
 footer ul.links li.fb {
   background-position: 0 -50px;
 }
-/* line 175, ../sass/styles.scss */
+/* line 192, ../sass/styles.scss */
 footer ul.links li.tw {
   background-position: 0 -75px;
 }
-/* line 178, ../sass/styles.scss */
+/* line 195, ../sass/styles.scss */
 footer ul.links li a {
   margin-left: 30px;
   color: white;
 }
-/* line 181, ../sass/styles.scss */
+/* line 198, ../sass/styles.scss */
 footer ul.links li a:hover {
   color: #476b18;
   text-decoration: none;
