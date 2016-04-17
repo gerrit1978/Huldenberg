@@ -1,0 +1,86 @@
+/* Tablet portrait */
+@media all and (min-width: 768px) and (max-width: 991px) {
+/*
+	.container {
+		width: 100%;
+	}
+*/
+}
+
+/* Tablet landscape */
+@media all and (min-width: 992px) and (max-width: 1199px) {
+	.resp-true {
+		display: none;
+	}
+	.container {
+		width: auto;
+	}
+	header {
+		position: relative;
+		z-index: 1000;
+		height: 100px;
+		overflow: hidden;
+		.logo {
+		  padding-left: 0;
+		  padding-right: 0;
+		  img {
+		    width: 100%;
+		    height: 100px;
+		  }
+		}
+		.visual {
+		  position: absolute;
+		  height: 100px;
+		  z-index: 0;
+		  top: 0;
+		  left: 0;
+		}
+		.search {
+			padding-top: 0;
+			text-align: center;
+			h2 {
+				margin-top: 10px;
+				font-family: "Quattrocento";
+				color: white;
+				text-shadow: 2px 2px black;
+			}
+			.form-search {
+				width: 40%;
+			}
+			.form-submit {
+				margin-left: 20px;
+			}
+		}
+	}
+	
+	nav {
+		height: 50px;
+		line-height: 50px;
+		font-family: "Oswald";
+		font-size: 1.23em;
+		text-transform: uppercase;
+		.col-md-1 {
+			display: none;
+		}
+		ul {
+		  margin: 0;
+		  padding: 0;
+		  li {
+		    margin: 0;
+		    padding: 0;
+		    display: inline-block;
+		    list-style: none;
+		  }
+		}
+	}
+
+	.main {
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display:         flex;
+	
+	}
+
+
+}

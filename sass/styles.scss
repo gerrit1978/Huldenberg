@@ -18,8 +18,8 @@ h1,h2,h3 {
 
 body {
   font-family: "Quattrocento";
-  background: $grey-bg;
-  color: $grid-columns;
+  background: white;
+  color: #444444;
 }
 
 .container {
@@ -35,7 +35,7 @@ nav {
     color: white;
     display: block;
     padding: 0 10px;
-    &:hover {
+    &:hover, &.active {
       text-decoration: none;
       color: white;
       background: $green-dark;
@@ -65,6 +65,9 @@ header {
 }
 
 .main {
+	h1 {
+		margin-left: 10px;
+	}
 	a {
 	  color: $green-dark;
 	  text-decoration: none;
