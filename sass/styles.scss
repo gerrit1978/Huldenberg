@@ -174,6 +174,13 @@ footer {
   background: $green-light !important;  
   color: white;
   padding: 2em 0;
+  a {
+  	color: white;
+  	&:hover {
+		color: $green-dark;
+		text-decoration: none;
+  	}
+  }
   ul.links {
     margin: 0;
     padding: 0;
@@ -183,6 +190,12 @@ footer {
       height: 25px;
       line-height: 25px;
       margin-bottom: 10px;
+      &.opening {
+	      background-position: 0 -250px;
+      }
+      &.contact {
+	      background-position: 0 -275px;
+      }
       &.pol {
         background-position: 0 0;
       }
@@ -197,11 +210,6 @@ footer {
       }
       a {
         margin-left: 30px;
-        color: white;
-		&:hover {
-		  color: $green-dark;
-		  text-decoration: none;
-		}
       }
     }
   }
