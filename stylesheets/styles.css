@@ -8646,20 +8646,12 @@ button.close {
     margin-left: 20px;
   }
 
-  /* line 78, ../sass/layouts/_desktop.scss */
-  nav {
-    height: 50px;
-    line-height: 50px;
-    font-family: "Oswald";
-    font-size: 1.23em;
-    text-transform: uppercase;
-  }
-  /* line 84, ../sass/layouts/_desktop.scss */
+  /* line 79, ../sass/layouts/_desktop.scss */
   nav ul {
     margin: 0;
     padding: 0;
   }
-  /* line 87, ../sass/layouts/_desktop.scss */
+  /* line 82, ../sass/layouts/_desktop.scss */
   nav ul li {
     margin: 0;
     margin-right: 3em;
@@ -8669,43 +8661,43 @@ button.close {
 }
 /* Desktop small */
 @media all and (min-width: 1200px) and (max-width: 1439px) {
-  /* line 101, ../sass/layouts/_desktop.scss */
+  /* line 96, ../sass/layouts/_desktop.scss */
   .container {
     width: 100%;
   }
 
-  /* line 106, ../sass/layouts/_desktop.scss */
+  /* line 101, ../sass/layouts/_desktop.scss */
   nav .col-md-1 {
     display: none;
   }
 }
 /* Desktop full width */
 @media all and (min-width: 1440px) {
-  /* line 118, ../sass/layouts/_desktop.scss */
+  /* line 113, ../sass/layouts/_desktop.scss */
   body {
     background: #fafafa !important;
   }
 
-  /* line 123, ../sass/layouts/_desktop.scss */
+  /* line 118, ../sass/layouts/_desktop.scss */
   .container .inner {
     margin-left: 20px;
     margin-right: 20px;
   }
 
-  /* line 129, ../sass/layouts/_desktop.scss */
+  /* line 124, ../sass/layouts/_desktop.scss */
   header {
     height: 190px;
   }
-  /* line 132, ../sass/layouts/_desktop.scss */
+  /* line 127, ../sass/layouts/_desktop.scss */
   header .logo img {
     height: 190px;
   }
-  /* line 136, ../sass/layouts/_desktop.scss */
+  /* line 131, ../sass/layouts/_desktop.scss */
   header .search {
     padding-top: 50px;
   }
 
-  /* line 143, ../sass/layouts/_desktop.scss */
+  /* line 138, ../sass/layouts/_desktop.scss */
   nav ul li {
     margin-right: 6em;
   }
@@ -8944,28 +8936,45 @@ body {
 /* line 31, ../sass/styles.scss */
 nav {
   background: #8cc63f;
+  height: 50px;
+  line-height: 50px;
+  font-family: "Oswald";
+  font-size: 1.23em;
+  text-transform: uppercase;
   color: white;
 }
-/* line 34, ../sass/styles.scss */
+/* line 39, ../sass/styles.scss */
 nav a {
   color: white;
-  display: block;
+  display: inline-block;
   padding: 0 10px;
 }
-/* line 38, ../sass/styles.scss */
+/* line 43, ../sass/styles.scss */
 nav a:hover, nav a.active {
   text-decoration: none;
-  color: white;
-  background: #476b18;
+  color: #476b18;
+}
+/* line 47, ../sass/styles.scss */
+nav a.contact {
+  background: url(../images/sprite.png) no-repeat left -300px;
+  padding-left: 75px !important;
+}
+/* line 50, ../sass/styles.scss */
+nav a.contact:hover {
+  background-position: left -350px;
+}
+/* line 55, ../sass/styles.scss */
+nav .col-md-1 {
+  display: none !important;
 }
 
-/* line 48, ../sass/styles.scss */
+/* line 62, ../sass/styles.scss */
 header .search .form-search {
   border: 1px solid #fafafa;
   border-radius: 5px;
   padding: 5px 10px;
 }
-/* line 53, ../sass/styles.scss */
+/* line 67, ../sass/styles.scss */
 header .search .form-submit {
   position: relative;
   top: 2px;
@@ -8977,63 +8986,67 @@ header .search .form-submit {
   font-family: Oswald;
   border-radius: 5px;
 }
+/* line 80, ../sass/styles.scss */
+header .contact a {
+  color: white !important;
+}
 
-/* line 68, ../sass/styles.scss */
+/* line 88, ../sass/styles.scss */
 .main h1 {
   margin-left: 10px;
 }
-/* line 71, ../sass/styles.scss */
+/* line 91, ../sass/styles.scss */
 .main a {
   color: #476b18;
   text-decoration: none;
 }
-/* line 74, ../sass/styles.scss */
+/* line 94, ../sass/styles.scss */
 .main a:hover {
   color: #8cc63f;
   text-decoration: none;
 }
-/* line 79, ../sass/styles.scss */
+/* line 99, ../sass/styles.scss */
 .main .main-content {
   padding: 30px 0;
 }
-/* line 80, ../sass/styles.scss */
+/* line 100, ../sass/styles.scss */
 .main .main-content a {
   border-bottom: 1px solid #476b18;
 }
-/* line 82, ../sass/styles.scss */
+/* line 102, ../sass/styles.scss */
 .main .main-content a:hover {
   color: #476b18;
   border-bottom: none;
 }
-/* line 88, ../sass/styles.scss */
+/* line 108, ../sass/styles.scss */
 .main .main-content .main-content-row {
   margin-bottom: 20px;
 }
-/* line 91, ../sass/styles.scss */
+/* line 111, ../sass/styles.scss */
 .main .main-content .main-content-row .item h2 {
   font-size: 1.4em;
 }
-/* line 98, ../sass/styles.scss */
+/* line 118, ../sass/styles.scss */
 .main aside.productcatalog {
   background: #476b18;
   padding-left: 0;
   padding-right: 0;
 }
-/* line 102, ../sass/styles.scss */
+/* line 122, ../sass/styles.scss */
 .main aside.productcatalog ul {
   margin: 0;
   padding: 0;
   margin-top: 1em;
   margin-bottom: 1em;
 }
-/* line 107, ../sass/styles.scss */
+/* line 127, ../sass/styles.scss */
 .main aside.productcatalog ul li {
   margin: 0;
   list-style: none;
   font-size: 1.23em;
   padding: 1em 20px;
 }
-/* line 112, ../sass/styles.scss */
+/* line 132, ../sass/styles.scss */
 .main aside.productcatalog ul li a {
   color: white;
   font-family: "Oswald";
@@ -9041,82 +9054,82 @@ header .search .form-submit {
   text-decoration: none;
   display: block;
 }
-/* line 118, ../sass/styles.scss */
+/* line 138, ../sass/styles.scss */
 .main aside.productcatalog ul li a:hover {
   text-decoration: none;
 }
-/* line 122, ../sass/styles.scss */
+/* line 142, ../sass/styles.scss */
 .main aside.productcatalog ul li:hover {
   background: #8cc63f;
 }
-/* line 128, ../sass/styles.scss */
+/* line 148, ../sass/styles.scss */
 .main aside.uit {
   background-color: white;
 }
-/* line 130, ../sass/styles.scss */
+/* line 150, ../sass/styles.scss */
 .main aside.uit h3 {
   text-align: center;
   color: #476b18;
 }
-/* line 133, ../sass/styles.scss */
+/* line 153, ../sass/styles.scss */
 .main aside.uit h3.cn-offscreen {
   text-align: left;
 }
-/* line 139, ../sass/styles.scss */
+/* line 159, ../sass/styles.scss */
 .main aside.uit .push-event h2 a {
   color: #8cc63f;
   font-size: 0.8em;
   line-height: 1.3;
 }
-/* line 143, ../sass/styles.scss */
+/* line 163, ../sass/styles.scss */
 .main aside.uit .push-event h2 a:hover {
   color: #476b18;
   text-decoration: none;
 }
-/* line 149, ../sass/styles.scss */
+/* line 169, ../sass/styles.scss */
 .main aside.uit .push-event .cn-event-label {
   font-weight: bold;
   display: block;
 }
-/* line 154, ../sass/styles.scss */
+/* line 174, ../sass/styles.scss */
 .main aside.uit .cultuurnet-control-footer {
   clear: both;
   padding-top: 30px;
   padding-bottom: 30px;
   font-family: Oswald;
 }
-/* line 159, ../sass/styles.scss */
+/* line 179, ../sass/styles.scss */
 .main aside.uit .cultuurnet-control-footer a {
   color: #8cc63f;
   font-size: 1.2em;
 }
-/* line 162, ../sass/styles.scss */
+/* line 182, ../sass/styles.scss */
 .main aside.uit .cultuurnet-control-footer a:hover {
   color: #476b18;
   text-decoration: none;
 }
 
-/* line 173, ../sass/styles.scss */
+/* line 193, ../sass/styles.scss */
 footer {
   background: #8cc63f !important;
   color: white;
   padding: 2em 0;
 }
-/* line 177, ../sass/styles.scss */
+/* line 197, ../sass/styles.scss */
 footer a {
   color: white;
 }
-/* line 179, ../sass/styles.scss */
+/* line 199, ../sass/styles.scss */
 footer a:hover {
   color: #476b18;
   text-decoration: none;
 }
-/* line 184, ../sass/styles.scss */
+/* line 204, ../sass/styles.scss */
 footer ul.links {
   margin: 0;
   padding: 0;
 }
-/* line 187, ../sass/styles.scss */
+/* line 207, ../sass/styles.scss */
 footer ul.links li {
   background: url(../images/sprite.png) no-repeat;
   list-style: none;
@@ -9124,31 +9137,31 @@ footer ul.links li {
   line-height: 25px;
   margin-bottom: 10px;
 }
-/* line 193, ../sass/styles.scss */
+/* line 213, ../sass/styles.scss */
 footer ul.links li.opening {
   background-position: 0 -250px;
 }
-/* line 196, ../sass/styles.scss */
+/* line 216, ../sass/styles.scss */
 footer ul.links li.contact {
   background-position: 0 -275px;
 }
-/* line 199, ../sass/styles.scss */
+/* line 219, ../sass/styles.scss */
 footer ul.links li.pol {
   background-position: 0 0;
 }
-/* line 202, ../sass/styles.scss */
+/* line 222, ../sass/styles.scss */
 footer ul.links li.bib {
   background-position: 0 -25px;
 }
-/* line 205, ../sass/styles.scss */
+/* line 225, ../sass/styles.scss */
 footer ul.links li.fb {
   background-position: 0 -50px;
 }
-/* line 208, ../sass/styles.scss */
+/* line 228, ../sass/styles.scss */
 footer ul.links li.tw {
   background-position: 0 -75px;
 }
-/* line 211, ../sass/styles.scss */
+/* line 231, ../sass/styles.scss */
 footer ul.links li a {
   margin-left: 30px;
 }

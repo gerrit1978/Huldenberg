@@ -30,16 +30,30 @@ body {
 
 nav {
   background: $green-light;
+  height: 50px;
+  line-height: 50px;
+  font-family: "Oswald";
+  font-size: 1.23em;
+  text-transform: uppercase;
   color: white;
   a {
     color: white;
-    display: block;
+    display: inline-block;
     padding: 0 10px;
     &:hover, &.active {
       text-decoration: none;
-      color: white;
-      background: $green-dark;
+      color: $green-dark;
     }
+    &.contact {
+		background: url(../images/sprite.png) no-repeat left -300px;
+		padding-left: 75px !important;
+		&:hover {
+			background-position: left -350px;
+		}
+    }
+  }
+  .col-md-1 {
+	  display: none !important;
   }
 }
 
@@ -62,6 +76,12 @@ header {
 			border-radius: 5px;
 		}
 	}
+	.contact {
+		a {
+			color: white !important;
+		}
+	}
+	
 }
 
 .main {
